@@ -31,6 +31,7 @@ nav ul li{
 }
 
 nav ul li{
+    /* Adding a color for active page as that page does not have a link on it */
     color:aliceblue;
 }
 
