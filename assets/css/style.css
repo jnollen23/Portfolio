@@ -1,15 +1,18 @@
+#root{
+    --nav-text:lime;
+}
+
 body{
-    justify-content: center;
+    background-color: #444;
 }
 header{
-    background-color: blueviolet;
+    background-color: #888;
     color:orange;
     justify-content: center;
     font-size: 40px;
 }
 nav{
-    background-color: blue;
-    color:orange;
+    background-color: violet;
     justify-content: center;
     display:flex;
     font-size: 25px;
@@ -24,17 +27,23 @@ nav ul{
 nav ul li{
     float:left;
     text-decoration: none;
+    cursor:pointer;
+}
+
+nav ul li{
+    color:aliceblue;
 }
 
 nav ul li a{
     text-decoration: none;
-    color:orange;
+    color:var(--nav-text);
 }
 
 nav ul li a:visited{
     text-decoration: none;
-    color:orange;
+    color:var(--nav-text);
 }
+
 
 nav ul li:last-child::after{
     content:"";
@@ -43,4 +52,16 @@ nav ul li:last-child::after{
 nav ul li::after{
     content:" | ";
     white-space: pre;
+}
+
+article{
+    position: absolute;
+    left: 12.5vw;
+    display:flex;
+    width: 75vw;
+    justify-content: center;
+    background-color: #ccc;
+}
+article section{
+    width:67.7vw;
 }
