@@ -1,117 +1,155 @@
-:root{
-    --nav-text:aliceblue;
+:root {
+    --nav-text: aliceblue;
 }
 
-body{
+body {
+    margin: 0;
     background-color: #444;
 }
-header{
+
+header {
     background-color: #888;
-    color:orange;
+    color: orange;
     justify-content: center;
     font-size: 40px;
-}
-nav{
-    background-color: violet;
-    justify-content: center;
-    display:flex;
-    font-size: 25px;
+    height: 10vh;
+    padding: 5vh 0 0 1vh;
+    font-family: sans-serif;
+    font-weight: bolder;
 }
 
-nav ul{
+nav {
+    background-color: #72F;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+nav ul {
     list-style-type: none;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-nav ul li{
-    float:left;
+nav ul li {
+    float: left;
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-nav ul li{
+nav ul li {
     /* Adding a color for active page as that page does not have a link on it */
-    color:teal;
+    color: teal;
     font-weight: bolder;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color:var(--nav-text);
+    color: var(--nav-text);
 }
 
-nav ul li a:visited{
+nav ul li a:visited {
     text-decoration: none;
-    color:var(--nav-text);
+    color: var(--nav-text);
 }
 
 
-nav ul li:last-child::after{
-    content:"";
+nav ul li:last-child::after {
+    content: "";
 }
 
-nav ul li::after{
-    content:" | ";
+nav ul li::after {
+    content: " | ";
     white-space: pre;
+    color: var(--nav-text);
 }
 
-article{
+article {
     margin: auto auto;
-    display:flex;
+    display: flex;
     width: 75vw;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     background-color: #ccc;
     font-size: 20px;
 }
-article section{
-    width:67.7vw;
+
+article section {
+    width: 67.7vw;
 }
 
-.right-text{
-    float:right;
+article h2 {
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
-.left-pic{
-    float:left;
-    padding:0 30px 0 0;
+.right-text {
+    float: right;
 }
 
-.right-pic{
-    float:right;
-    padding:0 0 0 30px;
+.left-pic {
+    float: left;
+    padding: 30px 30px 0 0;
 }
 
-.education{
+.right-pic {
+    float: right;
+    padding: 30px 0 0 30px;
+}
+
+.education {
     width: 250px;
     height: 250px;
 }
 
 @media screen and (width > 1920px) {
-    article{
-        font-size: 40px;
-    }    
+    header {
+        font-size: 60px;
+    }
 
-    .left-pic{
+    article {
+        font-size: 40px;
+    }
+
+    .left-pic {
         width: 400px;
         height: 650px;
     }
 
-    .right-pic{
+    .right-pic {
         width: 500px;
         height: 500px;
     }
 }
 
-@media screen and (width < 830px){
-    .left-pic{
-        width: 100px;
-        height: 150px;
+@media screen and (width < 850px) {
+    header {
+        font-size: 25px;
     }
 
-    .right-pic{
+    nav ul li {
+        font-size: 18px;
+    }
+
+    article {
+        /* margin:0px; */
+        width: 100vw;
+    }
+
+    article section {
+        width: 80vw;
+    }
+
+    .left-pic {
+        width: 100px;
+        height: 150px;
+        padding: 30px 30px 15px 0;
+    }
+
+    .right-pic {
         width: 150px;
         height: 150px;
+        padding: 30px 0 15px 30px;
     }
 }
