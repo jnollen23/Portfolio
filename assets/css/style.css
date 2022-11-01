@@ -1,5 +1,5 @@
-#root{
-    --nav-text:lime;
+:root{
+    --nav-text:aliceblue;
 }
 
 body{
@@ -32,7 +32,8 @@ nav ul li{
 
 nav ul li{
     /* Adding a color for active page as that page does not have a link on it */
-    color:aliceblue;
+    color:teal;
+    font-weight: bolder;
 }
 
 nav ul li a{
@@ -62,6 +63,7 @@ article{
     align-items:center;
     flex-direction: column;
     background-color: #ccc;
+    font-size: 20px;
 }
 article section{
     width:67.7vw;
@@ -84,4 +86,32 @@ article section{
 .education{
     width: 250px;
     height: 250px;
+}
+
+@media screen and (width > 1920px) {
+    article{
+        font-size: 40px;
+    }    
+
+    .left-pic{
+        width: 400px;
+        height: 650px;
+    }
+
+    .right-pic{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (width < 830px){
+    .left-pic{
+        width: 100px;
+        height: 150px;
+    }
+
+    .right-pic{
+        width: 150px;
+        height: 150px;
+    }
 }
