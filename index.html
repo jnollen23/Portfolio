@@ -5,62 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Jacob's Portfolio</title>
 </head>
 
 <body>
-    <header>
-        Jacob Nollen's Full Stack Developer Portfolio
-    </header>
-    <nav>
-        <ul>
+    <div class="container">
+        <nav>
+            <div class="nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Jacob Nollen's Portfolio</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class='material-icons'>menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li><!-- removing hyperlink to prevent a page reload -->
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact-info">Contact Info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <ul id="mobile-demo" class="sidenav" style="transform: translateX(-105%)">
             <li><a href="#about">About</a></li><!-- removing hyperlink to prevent a page reload -->
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact-info">Contact Info</a></li>
         </ul>
-    </nav>
-    <article>
-        <section id="about">
-            <img class="left-float-pic" src="./assets/images/Profile Pic Small.jpg" />
-            <section>
-                <h2>Bio</h2>
-                <p>
-                    I am a control system programmer working in the AV industry. My main programming languages are C#,
-                    Simpl Windows, and Vision Tools Pro E. I am looking to change my career path by attending a coding
-                    boot to become a Fullstack Web Developer. My dream job is a Senior Programmer overseeing an entire
-                    programming department. I am very proud of getting my Crestron Master - Silver level. I graduated
-                    from Georgia Institute of Technology in 2013 with a bachelors in Computer Engineering and a minor in
-                    Computer Science. My focus was in networking and network security.
-                </p>
+        <article>
+            <section class="row" id="about">
+                <img class="col s12 m3 l3" src="./assets/images/Profile Pic Small.jpg" />
+                <section class="col s12 m9">
+                    <h2>Bio</h2>
+                    <p>
+                        I am a control system programmer working in the AV industry. My main programming languages are
+                        C#,
+                        Simpl Windows, and Vision Tools Pro E. I am looking to change my career path by attending a
+                        coding
+                        boot to become a Fullstack Web Developer. My dream job is a Senior Programmer overseeing an
+                        entire
+                        programming department. I am very proud of getting my Crestron Master - Silver level. I
+                        graduated
+                        from Georgia Institute of Technology in 2013 with a bachelors in Computer Engineering and a
+                        minor in
+                        Computer Science. My focus was in networking and network security.
+                    </p>
+                </section>
             </section>
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <section class="portfolio">
-                <h3>HTML Semantics Use:</h3>
-                <a href="https://jnollen23.github.io/accessibility-feature-add"><img src="./assets/images/SEO.jpg"
-                        class="left-inline-pic"></a>
-                <p>A website using proper HTML Semantic tags for good search engine optimization</p>
-            </section>
-            <section class="portfolio">
-                <h3>Pre-Work Study Guide:</h3>
-                <a href="https://jnollen23.github.io/prework-study-guide"><img src="assets/images/BeginnersGuide.jpg"
-                        class="left-inline-pic"></a>
-                <p>A nice study guide for any potential programmers and useful tips for any programmer that doesnt use
-                    the basics very much.</p>
-            </section>
-        </section>
-        <section id="contact-info">
-            <h2>Contact Info</h2>
-            <ul class="contact-info">
-                <li>Phone: 404-543-7643</li>
-                <li>Email: jacob.nollen@hotmail.com</li>
-                <li><a href="https://www.linkedin.com/in/jacob-nollen-70827573/">Linkedin Profile</a></li>
-                <li><a href="https://github.com/jnollen23">Github</a></li>
-            </ul>
-        </section>
-    </article>
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <section class="row">
+                    <h3>Casino Website:</h3>
+                    <a href="https://jnollen23.github.io/GamblersAnonymous/"><img class="col s12"
+                            src="./assets/images/GroupProj1.jpg"></a>
+                    <p>First group project designing a website. The team decided to make a gambling
+                        website with
+                        multiple
+                        games. Blackjack, snake, and slots. There is also a sports betting page for sports enthusiast
+                    </p>
+                </section>
+                <section class="row">
+                    <section class="col s6 m6 l6">
+                        <div class="row">
+                            <h3>HTML Semantics Use:</h3>
+                            <a href="https://jnollen23.github.io/accessibility-feature-add"><img class="col s12 m6 l6"
+                                    src="./assets/images/SEO.jpg"></a>
+                            <p>A website using proper HTML Semantic tags for good search engine optimization</p>
+                        </div>
+                    </section>
+                    <scection class="col s6 m6 l6">
+                        <div class="row">
+                            <h3>Pre-Work Study Guide:</h3>
+                            <a href="https://jnollen23.github.io/prework-study-guide"><img class="col s12 m6 l6"
+                                    src="assets/images/BeginnersGuide.jpg"></a>
+                            <p>A nice study guide for any potential programmers and useful tips for any
+                                programmer that
+                                doesnt
+                                use
+                                the basics very much.</p>
+                        </div>
+                </section>
+                <section class="row">
+                </section>
+                <section id="contact-info">
+                    <h2>Contact Info</h2>
+                    <ul class="contact-info">
+                        <li>Phone: 404-543-7643</li>
+                        <li>Email: jacob.nollen@hotmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/jacob-nollen-70827573/">Linkedin Profile</a></li>
+                        <li><a href="https://github.com/jnollen23">Github</a></li>
+                    </ul>
+                </section>
+        </article>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="docs/js/jquery.timeago.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
